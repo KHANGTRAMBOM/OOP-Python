@@ -270,7 +270,7 @@ class Children(Father, Mother):
 2. `Circular inheritance` (vòng lặp kế thừa): Xảy ra khi `A` kế thừa `B`, `B` kế thừa `C`, và `C` lại kế thừa `A`, gây lỗi logic. Python sẽ phát hiện và báo lỗi trong trường hợp này.
 
 ### **So sánh với các ngôn ngữ khác**
-Do tính phức tạp của `đa kế thừa`, các ngôn ngữ như `Java` cấm nó cho các lớp, sử dụng `interface` để thay thế, trong khi `C++` hỗ trợ nhưng dễ gây lỗi nếu không quản lý tốt. Thay vào đó, chúng sử dụng:
+Do tính phức tạp của `đa kế thừa`, các ngôn ngữ như `Java` cấm đa kế thừacho các lớp, mặc dù trong `C++` có hỗ trợ nhưng dễ gây lỗi nếu không quản lý tốt. Thay vào đó, các ngôn trên sẽ sử dụng:
 - `Abstract class` (lớp trừu tượng): Một lớp không thể khởi tạo trực tiếp, dùng để định nghĩa các phương thức chung.
 - `Interface`: Một tập hợp các phương thức mà lớp con phải triển khai.
 
@@ -621,7 +621,7 @@ Do Python có cú pháp khá `lỏng lẻo` nên chuyện này cũng có thể x
   a.do_something() # Kết quả: I am doing something!!!
   ```
 
-👉 Do các `phương thức` và `thuộc tính` của `lớp ảo` có thể được định nghĩa hoặc không, nên nếu `lớp ảo` chỉ chứa các `phương thức` và `thuộc tính` được khai báo (không định nghĩa), thì nó sẽ biến từ `ảo` thành `thật`. Còn dối với `Interface` tất cả phải điều là `ảo`
+👉 Do các `phương thức` và `thuộc tính` của `lớp ảo` có thể được định nghĩa hoặc không, nên nếu `lớp ảo` chỉ chứa các `phương thức` và `thuộc tính` được định nghĩa, thì nó sẽ biến từ `ảo` thành `thật`. Còn đối với `Interface` tất cả phải điều là `ảo`
 
 # **TADA HẾT RỒI !!! 🥳🥳🥳🥳**
 
